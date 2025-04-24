@@ -127,3 +127,29 @@ function showEmployee(arr)
         console.log(arr[emp])
     }
 }
+
+//STEP 15
+
+filterarray = [58, '', 'abcd', true, null, false, 0]
+let filtervalues = filterarray.filter((item) =>{
+    return item !== '' && item !== 0 && item !== null && item !== false
+})
+console.log(filtervalues)
+
+//STEP 16
+
+array1 = [1,3,6,8,9,11,43,25,36]
+function getRandomItem(array) {
+
+    const randomIndex = (Math.floor(Math.random()*array1.length))
+
+    return array[randomIndex];
+  }
+num= getRandomItem(array1)
+console.log(`A random number from array: ${num}`)
+
+//STEP 17
+
+const larNumber= [1,3,6,8,9,11,43,25,36]
+largest = Math.max(...larNumber);
+console.log(`largest number is: ${largest}`); 
